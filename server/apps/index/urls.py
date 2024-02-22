@@ -1,9 +1,9 @@
 from django.urls import path
 
-from .views import index, slow
+from .views import index
 
 urlpatterns = [
     path("", index, kwargs={"rpath": ""}),
     path("<str:rpath>", index),
-    path("slow/<str:rpath>", slow),
+    path("<str:rpath>/slow", index),
 ]
