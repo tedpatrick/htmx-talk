@@ -1,0 +1,13 @@
+<div class="prose p-12">
+    <h2 class="mb-8 text-8xl">hx-select</h2>
+    <p class="mb-0 text-6xl p-4 font-semibold">Select content to swap in from a response</p>
+    <ul>
+        <li class="text-6xl">CSS Selector</li>
+    </ul>
+    <img src="/static/hx-select.png">
+    <button hx-get="/info"
+            hx-select="#info-details"
+            hx-target="#target-24"
+            class="btn btn-primary">Get Info</button>
+    <div id="target-24"></div>
+</div>

@@ -1,0 +1,25 @@
+<div class="prose p-12">
+      <h2 class="mb-8 text-8xl">hx-indicator</h2>
+      <p class="text-6xl p-4 font-semibold">Show spinners or progress indicators while the request is in flight.</p>
+      <ul>
+            <li class="text-6xl">CSS Selector</li>
+            <li class="text-6xl">Add class "htmx-request" during request</li>
+            <div>
+                  <button hx-post="/slow/hx-select"
+                          hx-target="#target-23"
+                          hx-indicator="#spintarget"
+                          class="btn btn-primary">Request</button>
+                  <span id="spintarget"
+                        class="ml-8 htmx-indicator loading loading-spinner loading-lg"></span>
+                  <span id="spintarget"
+                        class="ml-8 htmx-indicator loading loading-spinner loading-lg"></span>
+                  <span id="spintarget"
+                        class="ml-8 htmx-indicator loading loading-spinner loading-lg"></span>
+                  <span id="spintarget"
+                        class="ml-8 htmx-indicator loading loading-spinner loading-lg"></span>
+                  <span id="spintarget"
+                        class="ml-8 htmx-indicator loading loading-spinner loading-lg"></span>
+            </div>
+            <div id="target-23"></div>
+      </ul>
+</div>

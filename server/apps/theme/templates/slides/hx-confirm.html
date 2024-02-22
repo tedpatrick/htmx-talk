@@ -1,0 +1,13 @@
+<div class="prose p-12">
+    <h2 class="mb-8 text-8xl">hx-confirm</h2>
+    <p class="text-6xl p-4 font-semibold">Confirm before calling service</p>
+    <img src="/static/hx-confirm.png" />
+    <button class="btn btn-primary"
+            hx-delete="/delete-account"
+            hx-swap="outerHTML"
+            hx-confirm="Are you sure you want to delete your account?">Delete My Account (confirm)</button>
+    <button class="btn btn-primary"
+            hx-delete="/delete-account"
+            hx-swap="outerHTML"
+            hx-prompt="Confirm deletion by entering your username">Delete My Account (prompt)</button>
+</div>

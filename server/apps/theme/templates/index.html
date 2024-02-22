@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block layout %}
+    <main class="grid grid-cols-4">
+        <div class="h-screen bg-slate-200 p-4 prose"
+             hx-target="#content"
+             hx-swap="innerHTML transition:true">
+            <h3 class="mt-0 text-4xl">
+                Modern Web Applications with HTMX <span id="e0"></span>
+                <br>
+                <span class="text-lg">Ted Patrick ( ted@acumity.com )</span>
+            </h3>
+            <ul class="ml-4">
+                <li>
+                    <a class="cursor-pointer" hx-get="/introduction">Modern Web Applications with HTMX</a>
+                </li>
+                <li>
+                    <a class="cursor-pointer" hx-get="/hypermedia">Hypermedia</a>
+                </li>
+                <li>
+                    <a class="cursor-pointer" hx-get="/hypermedia_cycle">Hypermedia Lifecycle</a>
+                </li>
+                <li>
+                    <a class="cursor-pointer" hx-get="/hypermedia_html">Hypermedia & HTML</a>
+                </li>
+                <li>
+                    <a class="cursor-pointer" hx-get="/html_cycle">HTML Lifecycle</a>
+                </li>
+                <li>
+                    <a class="cursor-pointer" hx-get="/spa_cycle">SPA Lifecycle</a>
+                </li>
+                <li>
+                    <a class="cursor-pointer" hx-get="/what_is_htmx">What is HTMX?</a>
+                </li>
+                <li>
+                    <a class="cursor-pointer" hx-get="/htmx_example">HTMX Example</a>
+                </li>
+                <li>
+                    <a class="cursor-pointer" hx-get="/htmx_cycle">HTMX Lifecycle</a>
+                </li>
+                <li>
+                    <a class="cursor-pointer" hx-get="/hx-[method]">hx-{method}</a>
+                </li>
+                <li>
+                    <a class="cursor-pointer" hx-get="/hx-target">hx-target</a>
+                </li>
+                <li>
+                    <a class="cursor-pointer" hx-get="/hx-swap">hx-swap</a>
+                </li>
+                <li>
+                    <a class="cursor-pointer" hx-get="/hx-indicator">hx-indicator</a>
+                </li>
+                <li>
+                    <a class="cursor-pointer" hx-get="/form_grouping">&lt;form&gt; Grouping</a>
+                </li>
+                <li>
+                    <a class="cursor-pointer" hx-get="/hx-trigger">hx-trigger</a>
+                </li>
+                <li>
+                    <a class="cursor-pointer" hx-get="/hx-select">hx-select</a>
+                </li>
+                <li>
+                    <a class="cursor-pointer" hx-get="/hx-swap-oob">hx-swap-oob <span class="inline" id="e1"></span></a>
+                </li>
+                <li>
+                    <a class="cursor-pointer" hx-get="/hx-on">hx-on</a>
+                </li>
+                <li>
+                    <a class="cursor-pointer" hx-get="/hx-confirm">hx-confirm & hx-prompt</a>
+                </li>
+                <li>
+                    <a class="cursor-pointer" hx-get="/headers">HTTP Headers</a>
+                </li>
+                <li>
+                    <a class="cursor-pointer" hx-get="/thoughts">Thoughts on HTMX</a>
+                </li>
+                <li>
+                    <a class="cursor-pointer" hx-get="/qa">Q&A</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-span-3 m-8" id="content">{% include "slides/introduction.html" %}</div>
+    </main>
+{% endblock layout %}

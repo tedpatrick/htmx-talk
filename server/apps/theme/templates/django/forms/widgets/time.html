@@ -1,0 +1,5 @@
+<input class="input input-bordered w-full max-w-xs"
+       type="time"
+       name="{{ widget.name }}"
+       {% if widget.value != None %}value="{{ widget.value|stringformat:'s' }}"{% endif %}
+       {% include "django/forms/widgets/attrs.html" %}>

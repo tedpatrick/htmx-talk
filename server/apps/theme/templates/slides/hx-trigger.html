@@ -1,0 +1,22 @@
+<div class="prose p-12">
+    <h2 class="mb-8 text-8xl">hx-trigger</h2>
+    <p class="text-6xl p-4 font-semibold mb-0">
+        DOM Event that triggers request
+        <p class="text-4xl p-4 font-semibold mb-0">All DOM events... submit, click, load, mouseenter, keyup</p>
+    </p>
+    <img src="/static/hx-trigger.png">
+    <div class="grid grid-cols-1">
+        <div hx-get="/now" hx-trigger="load, every 1s"></div>
+        <div hx-target="#output" hx-swap="innerHTML">
+            <button class="link text-4xl" hx-trigger="mouseenter" hx-get="/fire">mouseenter</button>
+            <br>
+            <br>
+            <input type="text"
+                   name="water"
+                   class="input input-bordered input-primary w-full max-w-xs"
+                   hx-trigger="keyup changed delay:500ms"
+                   hx-post="/water">
+        </div>
+        <div id="output" class="mt-4 text-8xl"></div>
+    </div>
+</div>

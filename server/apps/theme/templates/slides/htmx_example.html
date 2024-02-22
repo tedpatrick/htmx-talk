@@ -1,0 +1,12 @@
+<div class="prose p-12">
+    <h2 class="text-8xl mb-4">HTMX Example</h2>
+    <div id="image">{% include "slides/htmx_example_code_0.html" %}</div>
+    <div class="grid grid-cols-2 p-8">
+        <div hx-target="#output" hx-swap="innerHTML">
+            <button class="btn btn-primary text-4xl" hx-get="/fire">Fire</button>
+            <button class="btn btn-primary text-4xl ml-4" hx-get="/water">Water</button>
+            <button class="btn btn-primary text-4xl ml-4" hx-get="/hx-select">Other</button>
+        </div>
+        <div id="output" class="text-8xl"></div>
+    </div>
+</div>

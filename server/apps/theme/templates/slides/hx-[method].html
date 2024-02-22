@@ -1,0 +1,17 @@
+<div class="prose p-12">
+    <h2 class="mb-8 text-8xl">hx-{method}</h2>
+    <img src="/static/hx-{method}.png" />
+    <form hx-target="#methods"
+          enctype="application/x-www-form-urlencoded"
+          hx-swap="innerHTML">
+        <input type="hidden" name="first_name" value="Ted">
+        <input type="hidden" name="last_name" value="Patrick">
+        <input type="hidden" name="city" value="Austin">
+        <input type="hidden" name="state" value="TX">
+        <button hx-get="/method-hx-get" class="btn btn-primary">hx-get</button>
+        <button hx-post="/method-hx-post" class="btn btn-primary">hx-post</button>
+        <button hx-put="/method-hx-put" class="btn btn-primary">hx-put</button>
+        <button hx-delete="/method-hx-delete" class="btn btn-primary">hx-delete</button>
+    </form>
+    <div class="m-10 border border-8 p-4 padding border-blue-500" id="methods">&nbsp;</div>
+</div>

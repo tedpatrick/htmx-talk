@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>News Article</title>
+    </head>
+    <body>
+        <header>
+            <h1>News Article</h1>
+        </header>
+        <article id="info-details">
+            <h2>Article Title</h2>
+            <p>Article content goes here...</p>
+            {{ now | date:"r" }}
+        </article>
+        <footer>
+            <p>
+                Published on <time datetime="2022-01-01">January 1, 2022</time>
+            </p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+  }
+
+.htmx-indicator{
+    opacity:0;
+    transition: opacity 500ms ease-in;
+}
+.htmx-request .htmx-indicator{
+    opacity:1
+}
+.htmx-request.htmx-indicator{
+    opacity:1
+}
+
+main {
+    background-color: #FBFBFB;
+}
+
+.prose {
+    max-width: none;
+}

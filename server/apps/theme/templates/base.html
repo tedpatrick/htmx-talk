@@ -1,0 +1,20 @@
+{% load django_htmx %}
+{% load version %}
+<!DOCTYPE html>
+<html lang="en" class="bg-acumity-page">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="/static/style.css?VERSION={% version %}" rel="stylesheet">
+        <script src="/static/htmx.min.js" defer></script>
+        {% django_htmx_script %}
+    </head>
+    <body hx-boost="true"
+          hx-headers='{"X-CSRFToken": "{{ csrf_token }}"}'
+          class="min-h-screen leading-normal tracking-normal">
+        {% block layout %}
+        {% endblock layout %}
+    </body>
+</html>

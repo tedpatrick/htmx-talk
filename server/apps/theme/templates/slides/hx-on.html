@@ -1,0 +1,13 @@
+<div class="prose p-12">
+    <h2 class="mb-8 text-8xl">hx-on</h2>
+    <p class="text-6xl p-4 font-semibold">JS called by events</p>
+    <img src="/static/hx-on.png" />
+    <div class="border border-4 border-blue-600"
+         hx-on:click="alert('Div Clicked!')">Click The Div</div>
+    <button class="btn btn-primary mt-2"
+            hx-get="/introduction"
+            hx-target="#target-32"
+            hx-on::before-request="alert('Making a request!')"
+            hx-on::after-request="alert('Done making a request!')">Get Info!</button>
+    <div id="target-32"></div>
+</div>
