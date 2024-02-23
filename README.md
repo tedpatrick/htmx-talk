@@ -9,10 +9,27 @@ Author: Ted Patrick (ted@acumity.com)
 
 Run the server
 
+## Using Pip
+
+```bash
+pip3 install -r requirements.txt
+python manage.py runserver
+```
+
+## Using Conda
+
 ```bash
 conda env create
 conda activate htmx
 python manage.py runserver
+```
+
+## Run Tailwind Compiler - Will update CSS as you change any file within the `server/apps/theme/templates/` directory
+
+```bash
+cd server/apps/theme/static_src
+npm install
+npm run dev
 ```
 
 Open the browser to http://localhost:8000/
